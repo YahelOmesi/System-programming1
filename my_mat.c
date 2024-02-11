@@ -2,7 +2,7 @@
 #include "my_mat.h"
 
 void initialGraph(int graph[N][N]){
-    printf("Enter the matrix value (10X10):\n");
+    //printf("Enter the matrix value (10X10):\n");
     for(int i = 0; i < N ; i++){
         for (int j = 0; j < N; j++)
         {
@@ -10,15 +10,15 @@ void initialGraph(int graph[N][N]){
         }  
     }}
 
-    void printGraph(int graph[N][N]){
-    printf("Adjacency Matrix:\n");
-    for(int i = 0; i < N ; i++){
-        for (int j = 0; j < N; j++)
-        {
-           printf("%d ", graph[i][j]);
-        } 
-        printf("\n"); 
-    }}
+    // void printGraph(int graph[N][N]){
+    // printf("Adjacency Matrix:\n");
+    // for(int i = 0; i < N ; i++){
+    //     for (int j = 0; j < N; j++)
+    //     {
+    //        printf("%d ", graph[i][j]);
+    //     } 
+    //     printf("\n"); 
+    // }}
 
     int isTherePath(int graph[N][N],int i,int j){
         if(graph[i][j] != 0){
