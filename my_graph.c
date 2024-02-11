@@ -24,21 +24,21 @@ int main(){
             break;
 
         case 'B':
-            printf(("Enter i and j"));
+         //   printf(("Enter i and j"));
             scanf("%d %d", &i, &j);
             isTherePath(graph,i,j);
             break;
 
         case 'C':
-            printf(("Enter i and j"));
+        //    printf(("Enter i and j"));
             scanf("%d %d", &i, &j);
             floydWarshell(graph);
-            printf("Shortest path from %d to %d: %d\n", i, j, shortestPath(graph,i,j));
+            printf("%d ",shortestPath(graph,i,j));
             break;
 
          case 'D':
          case EOF:
-            printf(("Exit the program"));
+        //    printf(("Exit the program"));
             break;
 
         default:
