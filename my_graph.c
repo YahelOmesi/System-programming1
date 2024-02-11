@@ -20,7 +20,7 @@ int main(){
         {
         case 'A':
             initialGraph(graph);
-            printGraph(graph);
+            //printGraph(graph);
             break;
 
         case 'B':
