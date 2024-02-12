@@ -42,8 +42,11 @@ void initialGraph(int graph[N][N]){
             }
         }
     }
-
+    
     int shortestPath(int graph[N][N],int i,int j){
         return ((isTherePath(graph,i,j) == 1) ? graph[i][j] : -1);
-    }
+            }
+        
+            
+        
     
