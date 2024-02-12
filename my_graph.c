@@ -21,9 +21,9 @@ int main(){
             scanf("%d %d", &i, &j);
             int result = isTherePath(graph,i,j);
             if(result == 1){
-                printf("true\n");
+                printf("True\n");
             }else{
-            printf("false\n");
+            printf("False\n");
             }
             break;
 
