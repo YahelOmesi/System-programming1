@@ -3,7 +3,7 @@
 
 int main(){
 
-    int graph[N][N];
+    int graph[N][N] = {(0)};
     char choise;
     int i, j;
 
@@ -14,7 +14,7 @@ int main(){
         printf("C - Find the shortest path:\n");
         printf("D - Exit:\n");
 
-        scanf("%c", &choise);
+        scanf(" %c", &choise);
 
         switch (choise)
         {
@@ -24,26 +24,28 @@ int main(){
             break;
 
         case 'B':
-         //   printf(("Enter i and j"));
+            //printf(("Enter i and j\n"));
             scanf("%d %d", &i, &j);
             isTherePath(graph,i,j);
             break;
 
         case 'C':
-        //    printf(("Enter i and j"));
+            //printf(("Enter i and j\n"));
             scanf("%d %d", &i, &j);
             floydWarshell(graph);
             printf("%d ",shortestPath(graph,i,j));
+            printf("\n");
             break;
 
          case 'D':
          case EOF:
-        //    printf(("Exit the program"));
+           printf(("Exit the program\n"));
             break;
 
         default:
             printf("This choice is not available\n");
         }
+        while (getchar() != '\n');
     } 
     
     while(choise != 'D' && choise != EOF);
