@@ -48,6 +48,6 @@ int main(){
         while (getchar() != '\n');
     } 
     
-    while(choise != 'D' && choise != EOF);
+    while(choise != 'D');
     return 0;
 }
