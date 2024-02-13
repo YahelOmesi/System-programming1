@@ -51,29 +51,29 @@ int answer = KnapSack(weight, value, selectedItems);
 
 printf("Maximum profit: %d\n", answer);
 
-printf("Selected items: ");
+printf("Selected items:");
 for(int i = 0; i < ITEMS; i++){ //only those selected and marked with 1
     if(selectedItems[i]){ 
         switch(i){
 
             case 0:
-                printf("%c ", label[0]);
+                printf(" %c", label[0]);
                 break;
 
             case 1:
-                printf("%c ", label[1]);
+                printf(" %c", label[1]);
                 break;
 
             case 2:
-                printf("%c ", label[2]);
+                printf(" %c", label[2]);
                 break;
 
             case 3:
-                printf("%c ", label[3]);
+                printf(" %c", label[3]);
                 break;
 
             case 4:
-                printf("%c ", label[4]);
+                printf(" %c", label[4]);
                 break;
         }
     }
