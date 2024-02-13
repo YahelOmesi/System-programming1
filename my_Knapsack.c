@@ -78,6 +78,6 @@ for(int i = 0; i < ITEMS; i++){ //only those selected and marked with 1
         }
     }
  }
- printf("\n");
- return 0;
+
+return 0;
 }
