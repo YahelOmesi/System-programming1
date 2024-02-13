@@ -2,6 +2,7 @@
 FLAGS = -Wall -g
 
 #creating library
+all: my_graph my_Knapsack
 
 #Part 1
 my_graph.o: my_graph.c my_mat.h
@@ -14,15 +15,13 @@ my_graph: my_graph.o my_mat.o
 	gcc $(FLAGS) my_graph.o my_mat.o -o my_graph
 
 #Part 2
-Knapsack.o: my_Knapsack.c
-	gcc -c $(FLAGS) my_Knapsack.c -o Knapsack.o
+my_Knapsack.o: my_Knapsack.c
+	gcc -c $(FLAGS) my_Knapsack.c -o my_Knapsack.o
 
-Knapsack: Knapsack.o
-	gcc $(FLAGS) Knapsack.o -o Knapsack
+my_Knapsack: my_Knapsack.o
+	gcc $(FLAGS) my_Knapsack.o -o my_Knapsack
 
 #
-all: my_graph Knapsack
-
 clean:
 	rm -f my_graph Knapsack *.o *.so *.a
 
