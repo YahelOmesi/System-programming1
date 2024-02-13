@@ -3,13 +3,13 @@
 
 int main(){
 
-    int graph[N][N] = {(0)};
+    int graph[N][N] = {0};
     char choise;
     int i, j;
 
         scanf(" %c", &choise);
         
-        while (choise != 'D' && choise != EOF){
+        while (choise != EOF && choise != 'D'){
 
         switch (choise)
         {
@@ -29,7 +29,8 @@ int main(){
 
         case 'C':
             scanf("%d %d", &i, &j);
-            printf("%d \n",shortestPath(graph,i,j));
+            int ans = shortestPath(graph,i,j);
+            printf("%d\n",ans);
             break;
 
         }
