@@ -43,7 +43,6 @@ int main(){
 int weight[ITEMS], value[ITEMS], selectedItems[ITEMS] = {0};
 char label[ITEMS];
 
-printf("Enter label, value and weight for each of the %d items: \n", ITEMS);
 for(int i = 0; i < ITEMS; i++){
     scanf(" %c %d %d", &label[i] ,&value[i] ,&weight[i]);
 }
